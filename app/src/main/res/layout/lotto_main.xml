@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/prevBtn"
         android:layout_width="50dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:padding="0dp"
         android:text="←"
         android:textSize="20sp"
@@ -18,7 +18,7 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="29dp"
-        android:background="@drawable/prev_button" />
+        android:background="@drawable/purple_radius" />
 
     <LinearLayout
         android:id="@+id/lottoMainLogo"
