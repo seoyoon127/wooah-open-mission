@@ -21,6 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LottoMainActivity"/>
+        <activity android:name=".LottoIntroduceActivity"/>
+        <activity android:name=".LottoPrecautionActivity"/>
+        <activity android:name=".LottoCostInputActivity"/>
+        <activity android:name=".LottoWinInputActivity"/>
+        <activity android:name=".LottoBonusInputActivity"/>
+        <activity android:name=".LottoLoadingActivity"/>
+        <activity android:name=".LottoResultActivity"/>
     </application>
 
 </manifest>

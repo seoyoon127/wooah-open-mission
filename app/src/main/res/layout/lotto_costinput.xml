@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:background="@drawable/purple_radius"
+        android:padding="0dp"
+        android:text="←"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#AC9CD3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
     <LinearLayout
         android:id="@+id/lottoMainLogo"
         android:layout_width="match_parent"
@@ -58,6 +71,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="다음"
