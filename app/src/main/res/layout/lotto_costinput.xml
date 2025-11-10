@@ -73,6 +73,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/validateMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/costInput"
+        app:layout_constraintTop_toBottomOf="@+id/costInput"/>
+
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"

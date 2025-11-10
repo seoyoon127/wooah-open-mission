@@ -36,10 +36,19 @@ public class LottoLoadingActivity extends AppCompatActivity {
         loadingImage = findViewById(R.id.lottoIcon);
         handler.post(imageChanger);
 
+
+        Intent intentPrev = getIntent();
+        int lottoCost = intentPrev.getIntExtra("lottoCost", 0);
+        String winLottoStr = intentPrev.getStringExtra("winLottoStr");
+        int bonus = intentPrev.getIntExtra("bonusNum",0);
+
         handler.postDelayed(new Runnable() {
             @Override
             public void run(){
                 Intent intent = new Intent(LottoLoadingActivity.this, LottoResultActivity.class);
+                intent.putExtra("lottoCost", lottoCost);
+                intent.putExtra("winLottoStr", winLottoStr);
+                intent.putExtra("bonusNum", bonus);
                 startActivity(intent);
                 finish();
             }

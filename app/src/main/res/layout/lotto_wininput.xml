@@ -53,7 +53,7 @@
         android:id="@+id/costSelect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2000"
+        android:text=""
         android:textSize="20sp"
         android:background="@drawable/prev_select_border"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +77,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/costInput"
+        android:id="@+id/winInput"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="56dp"
@@ -86,6 +86,17 @@
         app:layout_constraintTop_toBottomOf="@+id/lottoWinText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/validateMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/winInput"
+        app:layout_constraintTop_toBottomOf="@+id/winInput"/>
 
     <Button
         android:id="@+id/nextButton"
@@ -100,6 +111,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/costInput" />
+        app:layout_constraintTop_toBottomOf="@+id/winInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
