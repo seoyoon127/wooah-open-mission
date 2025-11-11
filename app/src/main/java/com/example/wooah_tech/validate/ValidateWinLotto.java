@@ -1,5 +1,7 @@
 package com.example.wooah_tech.validate;
 
+import android.util.Log;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -32,6 +34,7 @@ public class ValidateWinLotto {
     }
 
     public static void validateLottoSize(Integer size) {
+        Log.d("DEBUG", "lottoSize=" + size);
         if (size != LottoSize) {
             throw new IllegalArgumentException(LOTTO_SIZE_ERROR_MSG);
         }
