@@ -1,6 +1,6 @@
-package com.example.wooah_tech.domain;
+package com.example.wooah_tech.Lotto.domain;
 
-import com.example.wooah_tech.utils.RandomLotto;
+import com.example.wooah_tech.Lotto.utils.RandomLotto;
 
 import java.util.ArrayList;
 import java.util.List;

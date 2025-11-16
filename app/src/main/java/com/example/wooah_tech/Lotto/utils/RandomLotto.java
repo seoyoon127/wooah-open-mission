@@ -1,4 +1,4 @@
-package com.example.wooah_tech.utils;
+package com.example.wooah_tech.Lotto.utils;
 
 import java.util.ArrayList;
 import java.util.List;

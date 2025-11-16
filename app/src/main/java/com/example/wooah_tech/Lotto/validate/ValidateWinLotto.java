@@ -1,4 +1,4 @@
-package com.example.wooah_tech.validate;
+package com.example.wooah_tech.Lotto.validate;
 
 import android.util.Log;
 

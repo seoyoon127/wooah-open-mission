@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Wooahtech"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Lotto.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,14 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LottoMainActivity"/>
-        <activity android:name=".LottoIntroduceActivity"/>
-        <activity android:name=".LottoPrecautionActivity"/>
-        <activity android:name=".LottoCostInputActivity"/>
-        <activity android:name=".LottoWinInputActivity"/>
-        <activity android:name=".LottoBonusInputActivity"/>
-        <activity android:name=".LottoLoadingActivity"/>
-        <activity android:name=".LottoResultActivity"/>
+        <activity android:name=".Lotto.LottoMainActivity"/>
+        <activity android:name=".Lotto.LottoIntroduceActivity"/>
+        <activity android:name=".Lotto.LottoPrecautionActivity"/>
+        <activity android:name=".Lotto.LottoCostInputActivity"/>
+        <activity android:name=".Lotto.LottoWinInputActivity"/>
+        <activity android:name=".Lotto.LottoBonusInputActivity"/>
+        <activity android:name=".Lotto.LottoLoadingActivity"/>
+        <activity android:name=".Lotto.LottoResultActivity"/>
     </application>
 
 </manifest>

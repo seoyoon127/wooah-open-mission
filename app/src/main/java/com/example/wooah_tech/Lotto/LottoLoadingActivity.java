@@ -1,4 +1,4 @@
-package com.example.wooah_tech;
+package com.example.wooah_tech.Lotto;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.wooah_tech.R;
 
 public class LottoLoadingActivity extends AppCompatActivity {
     private static final int SPLASH_TIMEOUT = 2000;

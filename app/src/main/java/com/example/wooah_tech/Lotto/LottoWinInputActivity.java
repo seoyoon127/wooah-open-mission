@@ -1,4 +1,4 @@
-package com.example.wooah_tech;
+package com.example.wooah_tech.Lotto;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.wooah_tech.validate.ValidateCost;
-import com.example.wooah_tech.validate.ValidateWinLotto;
+import com.example.wooah_tech.R;
+import com.example.wooah_tech.Lotto.validate.ValidateWinLotto;
 
 import java.util.List;
 

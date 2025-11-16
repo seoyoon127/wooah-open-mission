@@ -1,6 +1,6 @@
-package com.example.wooah_tech.domain;
+package com.example.wooah_tech.Lotto.domain;
 
-import com.example.wooah_tech.utils.CalculatePrize;
+import com.example.wooah_tech.Lotto.utils.CalculatePrize;
 
 import java.util.List;
 

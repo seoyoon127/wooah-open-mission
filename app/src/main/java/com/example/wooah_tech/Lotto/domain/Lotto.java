@@ -1,8 +1,7 @@
-package com.example.wooah_tech.domain;
+package com.example.wooah_tech.Lotto.domain;
 
-import com.example.wooah_tech.validate.ValidateWinLotto;
+import com.example.wooah_tech.Lotto.validate.ValidateWinLotto;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Lotto {

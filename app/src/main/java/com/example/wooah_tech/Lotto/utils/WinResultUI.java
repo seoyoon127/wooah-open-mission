@@ -1,4 +1,4 @@
-package com.example.wooah_tech.utils;
+package com.example.wooah_tech.Lotto.utils;
 
 import android.graphics.Color;
 import android.view.Gravity;
@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.wooah_tech.domain.Lotto;
-import com.example.wooah_tech.domain.Lottos;
+import com.example.wooah_tech.Lotto.domain.Lotto;
+import com.example.wooah_tech.Lotto.domain.Lottos;
 
 import java.util.List;
 

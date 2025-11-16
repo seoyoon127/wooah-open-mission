@@ -1,4 +1,4 @@
-package com.example.wooah_tech.validate;
+package com.example.wooah_tech.Lotto.validate;
 
 public class ValidateCost {
     public static final int COST_UNIT = 1000;
