@@ -9,11 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.wooah_tech.R;
 import com.example.wooah_tech.domain.Lotto;
-import com.example.wooah_tech.domain.Result;
 
 import java.util.List;
 
-public class ResultUI {
+public class MyResultUI {
     public static void setMyLottoLabel(char label, LinearLayout row, AppCompatActivity activity){
         TextView labelView = new TextView(activity);
         labelView.setText(label + " ");
