@@ -78,7 +78,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="56dp"
         android:hint="구분자는 , 사용"
-        android:background="@drawable/custom_input"
+        style="@style/CustomInput"
         app:layout_constraintTop_toBottomOf="@+id/lottoWinText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

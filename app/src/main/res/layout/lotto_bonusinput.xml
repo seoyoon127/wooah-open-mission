@@ -93,7 +93,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="56dp"
         android:hint="보너스번호 입력"
-        android:background="@drawable/custom_input"
+        style="@style/CustomInput"
         app:layout_constraintTop_toBottomOf="@+id/lottoBonusText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
