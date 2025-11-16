@@ -6,6 +6,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -24,6 +26,7 @@ public class LottoResultActivity extends AppCompatActivity {
     TextView[]  balls;
     TextView resultMsg;
     LinearLayout myLottosList;
+    Button endBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +44,7 @@ public class LottoResultActivity extends AppCompatActivity {
         resultMsg = findViewById(R.id.resultMsgText);
         myLottosList = findViewById(R.id.myLottosList);
         myLottosList.removeAllViews();
-
+        endBtn = findViewById(R.id.endBtn);
 
         Intent intentPrev = getIntent();
         int lottoCost = intentPrev.getIntExtra("lottoCost", 0);
@@ -55,6 +58,14 @@ public class LottoResultActivity extends AppCompatActivity {
         Result result = new Result(lottos.getLottos(), winLotto,bonus);
         resultMsg.setText(result.getPrizeMsg());
         setLottosUI(lottos, winLotto, bonus);
+
+        endBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LottoResultActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
