@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="로또-게임소개"
+            android:text="자동차 경주-게임소개"
             android:textSize="30sp"
             android:textStyle="bold" />
     </LinearLayout>
