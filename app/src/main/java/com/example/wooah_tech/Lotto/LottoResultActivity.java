@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.wooah_tech.MainActivity;
 import com.example.wooah_tech.R;
 import com.example.wooah_tech.Lotto.domain.Lottos;
 import com.example.wooah_tech.Lotto.domain.Result;

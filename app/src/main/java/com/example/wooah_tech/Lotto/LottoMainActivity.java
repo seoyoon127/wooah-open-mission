@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.wooah_tech.MainActivity;
 import com.example.wooah_tech.R;
 
 public class LottoMainActivity extends AppCompatActivity {
