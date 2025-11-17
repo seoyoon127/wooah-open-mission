@@ -32,6 +32,8 @@
         <activity android:name=".RacingCar.RacingCarMainActivity"/>
         <activity android:name=".RacingCar.RacingCarIntroduceActivity"/>
         <activity android:name=".RacingCar.RacingCarPrecautionActivity"/>
+        <activity android:name=".RacingCar.RacingCarTryInputActivity"/>
+        <activity android:name=".RacingCar.RacingCarNameInputActivity"/>
     </application>
 
 </manifest>

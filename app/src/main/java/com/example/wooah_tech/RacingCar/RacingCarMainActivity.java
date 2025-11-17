@@ -45,8 +45,8 @@ public class RacingCarMainActivity extends AppCompatActivity {
         racingcarStartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(RacingCarMainActivity.this, racingcarCostInputActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(RacingCarMainActivity.this,RacingCarNameInputActivity.class);
+                startActivity(intent);
             }
         });
 
