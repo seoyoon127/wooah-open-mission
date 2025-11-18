@@ -38,8 +38,8 @@ public class RacingCarTryInputActivity extends AppCompatActivity {
         prevButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(RacingCarTryInputActivity.this, RacingCarNameInputActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(RacingCarTryInputActivity.this, RacingCarNameInputActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -47,7 +47,7 @@ public class RacingCarTryInputActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String tryStr = tryInput.getText().toString();
-                Intent intent = new Intent(RacingCarTryInputActivity.this, LottoLoadingActivity.class);
+                Intent intent = new Intent(RacingCarTryInputActivity.this, RacingCarStartLoadingActivity.class);
                 try {
                     int tryNum = ValidateTry.convertToInt(tryStr);
                     ValidateTry.validate(tryNum);
