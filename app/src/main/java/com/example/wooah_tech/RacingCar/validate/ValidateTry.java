@@ -3,8 +3,8 @@ package com.example.wooah_tech.RacingCar.validate;
 import java.util.List;
 
 public class ValidateTry {
-    public static final int TRY_MAX = 7;
-    public static final String TRY_MAX_ERROR_MSG = "최대 7회 실행할 수 있습니다.";
+    public static final int TRY_MAX = 10;
+    public static final String TRY_MAX_ERROR_MSG = "최대 10회 실행할 수 있습니다.";
     public static final String TRY_INTEGER_ERROR_MSG = "실행횟수는 숫자여야 합니다.";
 
     public static int convertToInt(String tryNum) {

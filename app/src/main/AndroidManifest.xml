@@ -35,6 +35,9 @@
         <activity android:name=".RacingCar.RacingCarTryInputActivity"/>
         <activity android:name=".RacingCar.RacingCarNameInputActivity"/>
         <activity android:name=".RacingCar.RacingCarStartLoadingActivity"/>
+        <activity
+            android:name=".RacingCar.RacingCarStartActivity"
+            android:screenOrientation="landscape"/>  <!-- 가로 모드 고정 -->
     </application>
 
 </manifest>

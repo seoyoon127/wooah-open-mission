@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/roundInfo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#D9D9D9"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:text="Round 1\n carrr:10 carrr:10 carrr:10"
+        android:padding="3dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/carLane1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/roundInfo"
+        app:layout_constraintHeight_percent="0.28">
+
+        <TextView
+            android:id="@+id/carName1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="pobii"
+
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/smokeSet1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/carImage1"
+            android:src="@drawable/red_car"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/carLane2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/carLane1"
+        app:layout_constraintHeight_percent="0.28">
+
+        <TextView
+            android:id="@+id/carName2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="pobi"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/smokeSet2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/carImage2"
+            android:src="@drawable/blue_car"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/carLane3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/carLane2"
+        app:layout_constraintHeight_percent="0.28">
+
+        <TextView
+            android:id="@+id/carName3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="pobi"
+            android:textSize="24sp"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/smokeSet3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/carImage3"
+            android:src="@drawable/green_car"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

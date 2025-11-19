@@ -7,7 +7,6 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.wooah_tech.Lotto.LottoResultActivity;
 import com.example.wooah_tech.R;
 
 public class RacingCarStartLoadingActivity extends AppCompatActivity {
@@ -47,7 +46,7 @@ public class RacingCarStartLoadingActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run(){
-                Intent intent = new Intent(RacingCarStartLoadingActivity.this, LottoResultActivity.class);
+                Intent intent = new Intent(RacingCarStartLoadingActivity.this, RacingCarStartActivity.class);
                 intent.putExtra("carName", carName);
                 intent.putExtra("tryNum", tryNum);
                 startActivity(intent);
