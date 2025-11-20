@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        style="@style/PurpleButtonStyle"
+        android:text="←"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/calculatorIntroduceLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/prevBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/wooah_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="문자열 계산기-게임소개"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:background="@drawable/purple_radius"
+        android:padding="20dp"
+        android:text="
+1. 구분자와 양수로 구성된 문자열 입력\n\n
+
+2. 기본 구분자 : 쉼표(,) 또는 콜론(:)\n\n
+
+3. 커스텀 구분자 : 문자열 앞부분의 &quot;//&quot;와 &quot;\\n&quot; 사이에 위치하는 문자\n\n
+
+예를 들어 &quot;//;\\n1;2;3&quot;과 같이 값을 입력할 경우 커스텀 구분자는 세미콜론(;)
+
+"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/calculatorIntroduceLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"  />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
