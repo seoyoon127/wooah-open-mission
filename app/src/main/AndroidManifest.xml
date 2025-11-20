@@ -38,6 +38,8 @@
         <activity
             android:name=".RacingCar.RacingCarStartActivity"
             android:screenOrientation="landscape"/>  <!-- 가로 모드 고정 -->
+        <activity android:name=".RacingCar.RacingCarResultLoadingActivity"/>
+        <activity android:name=".RacingCar.RacingCarResultActivity"/>
     </application>
 
 </manifest>

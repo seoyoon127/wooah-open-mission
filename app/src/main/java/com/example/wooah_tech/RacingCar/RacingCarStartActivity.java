@@ -16,6 +16,8 @@ import com.example.wooah_tech.RacingCar.domain.Cars;
 import com.example.wooah_tech.RacingCar.util.CarService;
 import com.example.wooah_tech.RacingCar.validate.ValidateCarNames;
 
+import java.util.ArrayList;
+
 public class RacingCarStartActivity extends AppCompatActivity {
 
     TextView roundInfo, carName1, carName2, carName3;
@@ -46,14 +48,12 @@ public class RacingCarStartActivity extends AppCompatActivity {
 
 
         Cars cars = new Cars(ValidateCarNames.convertToList(carName));
-        setCatNames(cars);
+        setCarNames(cars);
         roundInfo.setText("Round 0\n");
         new Handler().postDelayed(() -> moveRounds(cars, tryNum, 0), 1500);
-
-
     }
 
-    private void setCatNames(Cars cars) {
+    private void setCarNames(Cars cars) {
         TextView[] carNames = {carName1, carName2, carName3};
         ImageView[] carImages = {carImage1, carImage2, carImage3};
         for (int i = 0; i< cars.getCarList().size(); i++) {
@@ -69,7 +69,15 @@ public class RacingCarStartActivity extends AppCompatActivity {
         ImageView[] carImages = {carImage1, carImage2, carImage3};
         LinearLayout[] smokeContainers = {smoke1, smoke2, smoke3};
         StringBuilder sb = new StringBuilder("Round "+(round+1)+"\n");
-        if (round >= tryNum) return; // 종료
+        if (round >= tryNum) {
+                Intent intent = new Intent(RacingCarStartActivity.this, RacingCarResultLoadingActivity.class);
+                intent.putExtra("winnerList", new ArrayList<>(cars.getWinners()));
+                intent.putExtra("winIndexList", new ArrayList<>(cars.getWinIndex()));
+                intent.putExtra("resultMap", cars.getCarDistanceMap());
+                startActivity(intent);
+                finish();
+                return;
+        }
         for (int i=0;i<cars.getCarList().size();i++){
             Car car = cars.getCarList().get(i);
             int prev = car.getDistance();
