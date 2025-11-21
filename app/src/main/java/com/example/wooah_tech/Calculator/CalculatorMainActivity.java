@@ -46,8 +46,8 @@ public class CalculatorMainActivity extends AppCompatActivity {
         calculatorStartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(CalculatorMainActivity.this, LottoCostInputActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(CalculatorMainActivity.this, CalculatorInputActivity.class);
+                startActivity(intent);
             }
         });
 

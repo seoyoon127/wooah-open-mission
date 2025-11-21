@@ -43,6 +43,7 @@
         <activity android:name=".Calculator.CalculatorMainActivity"/>
         <activity android:name=".Calculator.CalculatorIntroduceActivity"/>
         <activity android:name=".Calculator.CalculatorPrecautionActivity"/>
+        <activity android:name=".Calculator.CalculatorInputActivity"/>
     </application>
 
 </manifest>
